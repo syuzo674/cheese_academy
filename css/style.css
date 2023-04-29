@@ -1,0 +1,491 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+/*タイトル部分の表示*/
+.title_box {
+	background-image: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+/*タイトル部分の文字大きさ調整*/
+.title_box h1 {
+	font-size: 48px;
+	margin-bottom: 40px;
+}
+
+.title_box p {
+	font-size: 36px;
+}
+
+nav img {
+	width: 15%;
+}
+
+nav {
+	height: 80px;
+	border-bottom: 1px solid #efefef;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+nav ul li {
+	font-size: 21px;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: black;
+	padding: 20px 16px;
+}
+
+/*---------------------*/
+
+
+.about_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about_box h2 {
+	padding-top: 120px;
+	padding-bottom: 24px;
+	font-size: 24px;
+	color: #ffd61a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column
+}
+
+.about_cheese {
+	padding-bottom: 64px;
+}
+
+.cheese_school {
+	padding-bottom: 40px;
+}
+
+.about_box p {
+	padding-bottom: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column
+}
+
+.about_box img {
+	padding-top: 40px;
+	padding-bottom: 64px;
+	width: 100%;
+}
+
+.course_box h2 {
+	text-align: center;
+	font-size: 24px;
+	color: #222222;
+}
+
+.course_text {
+	text-align: center;
+	padding-bottom: 64px;
+}
+
+.course_img_box {
+	display: flex;
+	justify-content: center;
+}
+
+
+.course_texts {
+	width: 50%;
+	padding-left: 48px;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.course_texts_2 {
+	width: 50%;
+	padding-right: 48px;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+
+}
+
+.course_box h3 {
+	font-size: 24px;
+	color: #222222;
+	padding-bottom: 40px;
+}
+
+.course_texts_2 h3 {
+	font-size: 24px;
+	color: #222222;
+	padding-bottom: 40px;
+	margin-right: 120px;
+}
+
+.course_img {
+	width: 50%
+}
+
+.course_img img {
+	width: 100%;
+}
+
+.news_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.news_box h2 {
+	font-size: 24px;
+	color: #ffd61a;
+	padding-top: 64px;
+}
+
+.news_contents {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 300px;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.news_contents_box {
+	margin-top: 64px;
+	display: flex;
+	justify-content: center;
+}
+
+.news_date {
+	padding-top: 32px;
+	padding-bottom: 24px;
+}
+
+.news_img img {
+	width: 100%;
+}
+
+.news_text {
+	font-size: 14px;
+}
+
+.news_more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #F5F5F5;
+	font-size: 21px;
+	width: 300px;
+	height: 60px;
+	background-color: #ffd61a;
+	margin-top: 56px;
+	margin-bottom: 48px;
+}
+
+.news_more button {
+	padding: 16px 126px;
+}
+
+.access_box {
+	background-color: #fafafa;
+	padding-top: 64px;
+	padding-bottom: 80px;
+
+}
+
+.access_box h2 {
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 24px;
+}
+
+
+.access_info {
+	text-align: center;
+	margin-bottom: 64px;
+}
+
+.map {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+iframe {
+	height: 320px;
+	width: 1500px;
+	aspect-ratio: 16/9;
+}
+
+.access_box table th,
+td {
+	border: none;
+	font-weight: normal;
+	text-align: left;
+}
+
+.access_box table th {
+	padding-top: 24px;
+	padding-right: 48px;
+}
+
+.access_table {
+	padding-left: 210px;
+	display: flex;
+	justify-content: center;
+}
+
+.contact_box {
+	padding-top: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact_box h2 {
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 24px;
+}
+
+.contact_info {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 64px;
+}
+
+.contact_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 32px;
+	text-align: center;
+}
+
+.contact_note {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.input_form {
+	display: flex;
+	justify-content: center;
+}
+
+.name_iptxt {
+	border: 1px solid #bfbfbf;
+	width: 328px;
+	height: 36px;
+	margin-left: 120px;
+	margin-bottom: 24px;
+}
+
+.name_iptxt input {
+	width: 328px;
+	height: 36px;
+}
+
+.kana_iptxt {
+	border: 1px solid #bfbfbf;
+	width: 328px;
+	height: 36px;
+	margin-left: 120px;
+	margin-bottom: 24px;
+}
+
+.kana_iptxt input {
+	width: 328px;
+	height: 36px;
+}
+
+.mail_iptxt {
+	border: 1px solid #bfbfbf;
+	width: 328px;
+	height: 36px;
+	margin-left: 120px;
+	margin-bottom: 40px;
+}
+
+.mail_iptxt input {
+	width: 328px;
+	height: 36px;
+}
+
+.ex_iptxt {
+	border: 1px solid #bfbfbf;
+	width: 328px;
+	height: 108px;
+	margin: 18px 0 40px 120px;
+
+}
+
+.ex_iptxt input {
+	width: 328px;
+	height: 108px;
+}
+
+.input_form table th,
+td {
+	border: none;
+	font-weight: normal;
+	text-align: left;
+}
+
+.motivation_box label {
+	margin-left: 40px;
+}
+
+.motivation_box p {
+	font-size: 14px;
+	margin-bottom: 24px;
+}
+
+.motivation_box input[type=checkbox] {
+	accent-color: #f0ebe5;
+	width: 24px;
+	height: 24px;
+}
+
+.motivation_box {
+	margin-left: 120px;
+}
+
+.go_geek {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #F5F5F5;
+	font-size: 18px;
+	width: 298px;
+	height: 54px;
+	background-color: #ffd61a;
+	margin-bottom: 120px;
+}
+
+.go_geek button {
+	padding: 12px 130px;
+}
+
+/* 追従するTOPボタン部分
+.page_top_btn {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-weight: bold;
+	padding: 0.7em;
+	text-align: center;
+	background: rgb(255, 0, 0);
+	color: #fff;
+	transition: 0.3s0;
+}
+
+.page_top_btn:hover {
+	background: rgb(255, 0, 0, 0.8);
+	color: rgb(255, 255, 255, 0.8);
+}
+
+*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+.home_btn {
+	width: 60px;
+	height: 60px;
+	background-color: #707070;
+	margin: 0 60px 0 auto;
+}
+
+.home_btn button {
+	padding: 30px;
+}
+
+footer {
+	text-align: center;
+	color: #F5F5F5;
+	background-color: #707070;
+	font-size: 18px;
+	padding: 32px 0;
+
+}
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
